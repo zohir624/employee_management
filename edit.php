@@ -1,6 +1,6 @@
 <!-- edit.php -->
 <?php
-$conn = new mysqli("localhost", "username", "password", "company_management");
+include 'db_connect.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
     $id = $_GET['id'];
